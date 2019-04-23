@@ -70,18 +70,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        FirebaseInstanceId.getInstance().getInstanceId()
-                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                        if (task.isSuccessful()){
-                            String token = task.getResult().getToken();
-//                            textView.setText("Token: " + token);
-                        } else {
-//                            textView.setText(task.getException().getMessage());
-                        }
-                    }
-                });
+
     }
 
     private void createUser(){
@@ -140,6 +129,14 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mAuth.getCurrentUser() != null){
+            startProfileActivity();
+        }
     }
 
     private void startProfileActivity(){
