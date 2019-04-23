@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "531319804919",
+    "firebase_url": "https://androidnotifications-a5538.firebaseio.com",
+    "project_id": "androidnotifications-a5538",
+    "storage_bucket": "androidnotifications-a5538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531319804919:android:111ab44782c98123",
+        "android_client_info": {
+          "package_name": "com.lentimosystems.licio.androidnotifications2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531319804919-04lep6grph210uao4a0iqsnu917som24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lentimosystems.licio.androidnotifications2",
+            "certificate_hash": "16f2884f8bbe02b94f0d44f04843d5e028428d7d"
+          }
+        },
+        {
+          "client_id": "531319804919-nv4d3ukh8c4f4ol5m41maevgirgd5fg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlxP-cs0O3LKX8bpWDQlmBIa1okffrWcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531319804919-nv4d3ukh8c4f4ol5m41maevgirgd5fg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
