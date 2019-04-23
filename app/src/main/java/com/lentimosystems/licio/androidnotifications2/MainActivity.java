@@ -25,7 +25,7 @@ import com.google.firebase.iid.InstanceIdResult;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String CHANNEL_ID = "lentimo_systems";
+    public static final String CHANNEL_ID = "lentimo_systems";
     private static final String CHANNEL_NAME = "Lentimo Systems";
     private static final String CHANNEL_DESC = "Lentimo Systems Notifications";
 
@@ -145,14 +145,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void displayNotification(){
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this,CHANNEL_ID)
-                                    .setSmallIcon(R.drawable.ic_chat_bubble_outline_black_24dp)
-                                    .setContentTitle("Notification Title")
-                                    .setContentText("THis is a notification")
-                                    .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
-        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
-        managerCompat.notify(1,mBuilder.build());
-    }
 }
